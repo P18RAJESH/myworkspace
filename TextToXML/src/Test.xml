@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<Employees>
+<Employee>
+<ID>10</ID>
+<NAME>Rajesh</NAME>
+<DEPARTMENT>ECE</DEPARTMENT>
+<SALARY>10000.0</SALARY>
+</Employee>
+<Employee>
+<ID>101</ID>
+<NAME>Ankit</NAME>
+<DEPARTMENT>CSE</DEPARTMENT>
+<SALARY>20000.0</SALARY>
+</Employee>
+</Employees>

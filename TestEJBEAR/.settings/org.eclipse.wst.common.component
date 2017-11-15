@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TestEJBEAR">
+        <wb-resource deploy-path="/" source-path="/" tag="defaultRootSource"/>
+        <dependent-module archiveName="EJBTestProject.jar" deploy-path="/" handle="module:/resource/EJBTestProject/EJBTestProject">
+            <dependent-object>Module_1506410939753</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EJBTestProjectClient.jar" deploy-path="/" handle="module:/resource/EJBTestProjectClient/EJBTestProjectClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

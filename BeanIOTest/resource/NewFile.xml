@@ -1,0 +1,12 @@
+<beanio xmlns="http://www.beanio.org/2011/01" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.beanio.org/2011/01 C:\Batch\XSDS\beanio\xsd\2011\01\mapping.xsd">
+  
+ <stream name="EmployeeStream" format="fixedlength">
+  <record name="Employee" class="p1.Employee">
+    <field name="ename" type="String" length="10" required="true"/>
+    <field name="empid" type="long" length="3" required="true" /> 
+    <field name="salary" type="String" length="5" required="true" />  
+   </record> 
+ </stream>
+</beanio>

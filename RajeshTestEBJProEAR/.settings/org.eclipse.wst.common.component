@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="RajeshTestEBJProEAR">
+        <wb-resource deploy-path="/" source-path="/" tag="defaultRootSource"/>
+        <dependent-module archiveName="RajeshTestEBJPro.jar" deploy-path="/" handle="module:/resource/RajeshTestEBJPro/RajeshTestEBJPro">
+            <dependent-object>Module_1506411081957</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="RajeshTestEBJProClient.jar" deploy-path="/" handle="module:/resource/RajeshTestEBJProClient/RajeshTestEBJProClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
