@@ -26,46 +26,46 @@ public class MongoDBUpdateExample {
 				WriteResult result = col.update(query, update);
 		
 		//Update multiple field in a single document
-				DBObject query = new BasicDBObject("name", "David");
-				DBObject update = new BasicDBObject();
+				 query = new BasicDBObject("name", "David");
+				 update = new BasicDBObject();
 				update.put("$set", new BasicDBObject("country","India").append("name", "David New"));
 				
-				WriteResult result = col.update(query, update);
+				 result = col.update(query, update);
 		
 		//Add a new field in a single document
-				DBObject query = new BasicDBObject("_id", 123);
-				DBObject update = new BasicDBObject();
+				 query = new BasicDBObject("_id", 123);
+				 update = new BasicDBObject();
 				update.put("$set", new BasicDBObject("city","San Jose"));
 				
-				WriteResult result = col.update(query, update);
+				 result = col.update(query, update);
 		
 		//Update sub-document in a single document
-				DBObject query = new BasicDBObject("_id", 100);
-				DBObject update = new BasicDBObject();
+				 query = new BasicDBObject("_id", 100);
+				 update = new BasicDBObject();
 				update.put("$set", new BasicDBObject("address.city","Santa Clara"));
 				
-				WriteResult result = col.update(query, update);
+				 result = col.update(query, update);
 		
 		//Remove a field in a single document
-				DBObject query = new BasicDBObject("_id", 100);
-				DBObject update = new BasicDBObject();
+				 query = new BasicDBObject("_id", 100);
+				 update = new BasicDBObject();
 				update.put("$unset", new BasicDBObject("address.city",""));
 				
-				WriteResult result = col.update(query, update);
+				 result = col.update(query, update);
 		
 		//insert document if no match found
-				DBObject query = new BasicDBObject("name", "Lisa");
-				DBObject update = new BasicDBObject();
+				 query = new BasicDBObject("name", "Lisa");
+				 update = new BasicDBObject();
 				update.put("$set", new BasicDBObject("city","San Jose"));
 				
-				WriteResult result = col.update(query, update, true, false);
+				 result = col.update(query, update, true, false);
 		
 		//Update multiple document - $inc example
-		DBObject query = new BasicDBObject("salary", new BasicDBObject("$lt", 9000));
-		DBObject update = new BasicDBObject();
+		 query = new BasicDBObject("salary", new BasicDBObject("$lt", 9000));
+		 update = new BasicDBObject();
 		update.put("$inc", new BasicDBObject("salary",1000));
 		
-		WriteResult result = col.updateMulti(query, update);
+		 result = col.updateMulti(query, update);
 		mongo.close();
 				
 	}
